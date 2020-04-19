@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(59, 63, 69);
+  height: 850px;
+  border: solid 28px white;
+  font-family: Trebuchet, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  background: rgb(74, 79, 86);
+  text-align: center;
+  height: 135px;
+}
+
+main {
+  text-align: center;
+}
+
+.header-div {
+  /* display: inline-block; */
+  color: rgb(204, 122, 124);
+  height: fit-content;
+  /* margin: 25px 0; */
+  margin: auto;
+}
+
+.header-title-h1 {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.header-title-h3 {
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.main-container {
+  display: inline-block;
+  margin-top: 43px;
+  background: rgb(121, 117, 147);
+  width: 925px;
+  height: 420px;
+  text-align: left;
+}
+
+.container-form {
+  height: 420px;
+}
+
+.container-ul {
+  height: 420px;
+}
+
+.main-containter-list {
+  display: flex;
+  padding-left: 10px;
+  list-style-type: none;
+  height: 70px;
+}
+
+.main-containter-list:hover, .main-containter-list:nth-child(2n + 1):hover {
+    background: rgb(98, 94, 119);
+    cursor: pointer;
+    border-top: white solid 3px;
+    border-bottom: white solid 3px;
+}
+
+.main-containter-list:active, .main-containter-list:nth-child(2n + 1):active {
+    background:rgb(85, 172, 58);
+    transition: 0.3s;
+}
+
+.main-containter-list label {
+  font-size: 25px;
+  color: rgb(241, 249, 249);
+  margin: auto 15px;
+}
+
+.main-containter-list label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: rgb(222, 222, 222);
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+  transition: 0.5s;
+  border-radius: 12%;
+  cursor: pointer;
+}
+
+.main-containter-list:nth-child(2n + 1) {
+  background: rgb(136, 131, 158);
+}
+
+.container-span {
+    font-size: 16px;
+    color: rgb(205, 203, 212);
+    vertical-align: middle;
+  }
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-image: url(img/tick.png);
+  background-size: 100%;
+}
+
+input[type="checkbox"]:checked + label, input[type="checkbox"]:checked + label>span{
+    text-decoration: line-through;
+    color: rgb(175, 165, 165);
+}
+
+.button {
+    display: flex;
+    background: rgb(74, 79, 86);
+    width: 925px;
+    height: 70px;
+    margin: 43px auto;
+}
+
+.button-link {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    text-decoration: none;
+    color: rgb(204, 122, 124);
+    font-size: 27px;
+}
+
